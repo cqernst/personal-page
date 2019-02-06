@@ -1,0 +1,30 @@
+* {
+  font-family: arial;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+.button {
+  padding: 6px;
+  border: 2px solid black;
+}
+
+.button:hover {
+  box-shadow: 2px 2px turquoise;
+}
+
+.name {
+  color: black;
+  padding: 6px;
+  display: inline-block;
+  background-color: aliceblue;
+  box-shadow: 8px 8px turquoise;
+}
+
+.contact {
+  padding: 6px;
+  border: 2px black solid;
+}
