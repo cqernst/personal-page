@@ -7,18 +7,18 @@ a {
   text-decoration: none;
 }
 
-nav {
-  height: 30px;
-  margin: 12px 0;
-}
-
 .button {
   padding: 6px;
   border: 2px solid black;
+  margin-right: .75em;
 }
 
 .button:hover {
   box-shadow: 2px 2px turquoise;
+}
+
+nav {
+  display: flex;
 }
 
 .home {
@@ -32,11 +32,20 @@ nav {
 .home nav {
   display: flex;
   flex-direction: column;
+  height: 132px;
+  margin: 12px 0;
+  justify-content: space-between;
+  width: 190px;
+}
+
+.home nav a {
+  text-align: center;
 }
 
 header {
   display: flex;
   flex-direction: column;
+  margin-top: 1.25rem;
 }
 
 header .contact {
@@ -44,13 +53,17 @@ header .contact {
   flex-direction: column;
   flex-grow: 1;
   margin-right: 1.25rem;
-  margin-top: 1rem;
+  margin-top: .5rem;
   padding: 6px;
   border: 2px solid black;
   box-shadow: 4px 4px magenta;
   justify-content: space-around;
   max-width: 220px;
   height: min-content;
+}
+
+header .contact p {
+  margin: 0;
 }
 
 header .contact a {
@@ -115,7 +128,7 @@ header .contact a:hover {
 .employer_name {
   margin: 6px 0;
   display: inline-block;
-  border-bottom: 2px solid turquoise;
+  text-decoration: underline turquoise;
 }
 
 .name {
@@ -129,8 +142,9 @@ header .contact a:hover {
 @media (min-width: 360px) {
   .home nav {
     flex-direction: row;
-    width: 165px;
+    width: 242px;
     justify-content: space-between;
+    height: min-content;
   }
 
   .main_header .separator {
@@ -142,7 +156,7 @@ header .contact a:hover {
   }
 
   header .contact {
-    flex-direction: row;
+    flex-direction: column;
     max-width: unset;
   }
 }
