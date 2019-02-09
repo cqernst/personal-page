@@ -84,6 +84,31 @@ header .contact .links a{
  align-items: center;
 }
 
+.project p {
+  display: inline;
+  line-height: 22px;
+}
+
+.project a, .project a .highlight {
+  border-bottom: 2px solid turquoise;
+}
+
+.project a:hover {
+  border-bottom: 2px solid teal;
+}
+
+.project a .highlight:hover {
+  border-bottom: 2px solid teal;
+}
+
+.project h4 {
+  display: inline;
+}
+
+.projects .project {
+  margin-bottom: 2rem;
+}
+
 header .contact .links a:hover {
   border-bottom: 2px solid deeppink;
 }
