@@ -1,11 +1,15 @@
 # simple-portfolio
 
-- [ ] add a 404 page and hook it up
+- [x] add a 404 page and hook it up
+- [x] put all text into resume from pdf
+- [x] write mobile styles for resume
+- [x] write desktop styles for resume
+- [x] add pdf download button to resume page
+- [x] mobile styles for home page
+- [x] desktop styles for homepage
 - [ ] a portfolio page
-- [ ] put all text into resume from pdf
-- [ ] write mobile styles for resume
-- [ ] write desktop styles for resume
-- [ ] add pdf download button to resume page
 - [ ] make svg drawings for portfolio projects
-- [ ] mobile styles for home page
-- [ ] desktop styles for homepage
+- [ ] sparkle animation
+- [ ] line animations 
+- [ ] animate contact icon?
+- [ ] dropdown email form in resume

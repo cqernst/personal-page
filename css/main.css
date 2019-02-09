@@ -21,12 +21,20 @@ nav {
   display: flex;
 }
 
-.home {
+.home, .error_page {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 80vh;
+}
+
+.error_image {
+  height: 60px;
+  width: 60px;
+  background-size: cover;
+  background-image: url("../image/favicon.png");
+  background-repeat: no-repeat;
 }
 
 .home nav {
@@ -57,22 +65,48 @@ header .contact {
   padding: 6px;
   border: 2px solid black;
   box-shadow: 4px 4px magenta;
-  justify-content: space-around;
+  justify-content: space-between;
   max-width: 220px;
   height: min-content;
 }
 
 header .contact p {
   margin: 0;
+  margin-bottom: .75rem;
 }
 
-header .contact a {
- border: 2px solid transparent; 
+header .contact .links a{
+ border-bottom: 2px solid transparent; 
  max-width: min-content;
+ display: flex;
+ align-items: center;
+ display: flex;
+ align-items: center;
 }
 
-header .contact a:hover {
+header .contact .links a:hover {
   border-bottom: 2px solid deeppink;
+}
+
+header .contact .contact_image {
+  width: 24px;
+  height: 16px;
+  display: inline-block;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.contact_image.envelope {
+  background-image: url("../image/email.svg");
+}
+
+.contact_image.linkedin {
+  background-image: url("../image/linkedin.svg");
+}
+
+.contact_image.github {
+  background-image: url("../image/github.svg");
 }
 
 .name_block {
@@ -81,6 +115,7 @@ header .contact a:hover {
   padding: 6px;
   background-color: lightcyan;
   max-width: 220px;
+  min-width: 170px;
   margin-right: 1.25rem;
 }
 
@@ -139,24 +174,42 @@ header .contact a:hover {
   box-shadow: 8px 8px turquoise;
 }
 
+
+
 @media (min-width: 360px) {
+  .main_header .separator {
+    display: initial;
+  }
+}
+
+@media (min-width: 420px){
   .home nav {
     flex-direction: row;
     width: 242px;
     justify-content: space-between;
     height: min-content;
   }
+}
 
-  .main_header .separator {
-    display: initial;
-  }
-
+@media (min-width: 560px){
   header {
     flex-direction: row;
   }
 
   header .contact {
-    flex-direction: column;
-    max-width: unset;
+    flex-direction: row;
+    max-width: 620px;
+  }  
+  
+  header .contact p {
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: 780px){
+  header .contact .links {
+    display: flex;
+    width: 390px;
+    justify-content: space-between;
   }
 }
