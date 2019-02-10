@@ -54,10 +54,18 @@ nav {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: 0 auto;
+  width: min-content;
+}
+
+.portfolio_page nav {
+  align-self: flex-start;
 }
 
 .projects_container {
   display: flex;
+  flex-direction: column;
+  align-items: center;  
   justify-content: space-between;
   margin: 2rem;
   max-width: 500px;
@@ -67,25 +75,24 @@ nav {
 
 .project_box {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   height: 200px;
   width: 200px;
   border: 2px solid black;
-  display: flex;
-  flex-direction: row;
   margin-bottom: 2rem;
   box-shadow: 6px 6px turquoise;
+  padding: 1rem;
+  hyphens: manual;
 }
 
 .project_box:hover {
   box-shadow: 6px 6px cyan;
 }
 
-.project_box .project_image {
-  width: 50%;
-  background-color: violet;
-  border-right: 2px solid black;
+.project_box .title {
+  border-bottom: 2px solid turquoise;
 }
 
 header {
@@ -255,6 +262,14 @@ header .contact .contact_image {
 }
 
 @media (min-width: 560px){
+  .portfolio_page {
+    align-items: left;
+    width: 500px;
+  }
+  
+  .portfolio_page .projects_container {
+    flex-direction: row;
+  }
   header {
     flex-direction: row;
   }
