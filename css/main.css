@@ -85,10 +85,32 @@ nav {
   box-shadow: 6px 6px turquoise;
   padding: 1rem;
   hyphens: manual;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.project_box.monumentall {
+  background-image: url('../image/monumentall.svg');
+}
+
+.project_box.aquila {
+  background-image: url('../image/aquila.svg');
+}
+
+.project_box.votealert {
+  background-image: url('../image/votealert.svg');
+}
+
+.project_box.donke {
+  background-image: url('../image/donke.svg');
 }
 
 .project_box:hover {
   box-shadow: 6px 6px cyan;
+}
+
+.project_box p {
+  background-color: white;
 }
 
 .project_box .title {
