@@ -40,7 +40,7 @@ nav {
 .home nav {
   display: flex;
   flex-direction: column;
-  height: 132px;
+  height: 80px;
   margin: 12px 0;
   justify-content: space-between;
   width: 190px;
