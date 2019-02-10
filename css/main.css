@@ -248,7 +248,7 @@ header .contact .contact_image {
 @media (min-width: 420px){
   .home nav {
     flex-direction: row;
-    width: 242px;
+    width: 160px;
     justify-content: space-between;
     height: min-content;
   }
