@@ -7,7 +7,7 @@
 - [x] add pdf download button to resume page
 - [x] mobile styles for home page
 - [x] desktop styles for homepage
-- [ ] a portfolio page
+- [x] a portfolio page
 - [ ] make svg drawings for portfolio projects
 - [ ] sparkle animation
 - [ ] line animations 
